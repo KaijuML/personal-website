@@ -2,7 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Clément Rebuffel"
 enableEmoji = "true"
-
+assetDir = "static"
 
 [params]
     author = "Clément Rebuffel"
