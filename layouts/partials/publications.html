@@ -11,13 +11,13 @@
         <li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source">
           <div class="col-12 d-inline-block">
             <div class="d-inline-block mb-1">
-              <h3 class="wb-break-all">
+              <h3 class="">
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
               </h3>
             </div>
 
             <div>
-              <div class="col-12 d-inline-block text-gray mb-2 pr-4">
+              <div class="col-12 d-inline-block text-gray mb-2 pr-4"  style="text-align: justify;">
                 {{ .Summary | safeHTML }}
               </div>
             </div>
@@ -37,9 +37,9 @@
               {{ end }}
 
               Created
-              <relative-time datetime="{{ .PublishDate.Format " Mon, 02 Jan 2006 15:04:05 -0700" }}" class="no-wrap"
-                title="{{ .PublishDate.Format " Mon, 02 Jan 2006 15:04:05 -0700" }}">
-                {{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}
+              <relative-time datetime="{{ .PublishDate.Format " Mon, 02 Jan 2006" }}" class="no-wrap"
+                title="{{ .PublishDate.Format " Mon, 02 Jan 2006" }}">
+                {{ .PublishDate.Format "Mon, 02 Jan 2006" }}
               </relative-time>
             </div>
             
