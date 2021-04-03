@@ -1,0 +1,18 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Clément Rebuffel"
+enableEmoji = "true"
+
+
+[params]
+    author = "Clément Rebuffel"
+    avatar = "/images/profile-picture.png"
+    shortdescription = "PhD Student in NLG"
+    longdescription = [["Made in France", ":fr:"], ["Data-to-Text Generation.", ""], ["Deep Learning aficionado.", ""]]
+    
+    location = "France"
+
+    email = "clement.rebuffel@protonmail.com"
+    github = "https://github.com/KaijuML"
+    twitter = "https://twitter.com/ClementRebuffel"
+    linkedin = "https://fr.linkedin.com/in/clementrebuffel"
