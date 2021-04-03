@@ -79,47 +79,38 @@
         </div>
         <!-- Location and email end -->
 
-        <!-- All possible social media, listed one after the other -->
-        <div class="border-top color-border-secondary pt-3 mt-3 clearfix hide-sm hide-md">
-          <h2 class="mb-2 h4">Social Media</h2>
+        <!-- All my social media profiles, listed one after the other -->
+        <div id="social-media" class="border-top color-border-secondary pt-3 mt-3 clearfix hide-sm hide-md">
+          <h2 class="mb-2 h4">Find me & Follow me</h2>
 
           {{ if .Site.Params.github}}
-          <a class="avatar-group-item" href="https://github.com/{{ .Site.Params.github }}">
-            <img alt="@github" width="32" height="32" src="{{ "images/icons/github.png" | absURL }}" class="avatar">
-          </a>
+          <div><a class="muted-link" href="{{ .Site.Params.github }}">
+            <i class="fab fa-github"></i>
+            <span> Github </span>
+          </a></div>
           {{ end }}
 
           {{ if .Site.Params.twitter}}
-          <a class="avatar-group-item" href="https://twitter.com/{{ .Site.Params.twitter }}">
-            <img alt="@twitter" width="32" height="32" src="{{ "images/icons/twitter.png" | absURL }}" class="avatar">
-          </a>
+          <div><a class="muted-link" href="{{ .Site.Params.twitter }}">
+            <i class="fab fa-twitter"></i>
+            <span> Twitter </span>
+          </a></div>
           {{ end }}
 
           {{ if .Site.Params.linkedin }}
-          <a class="avatar-group-item" href="https://linkedin.com/in/{{ .Site.Params.linkedin }}">
-            <img alt="@linkedin" width="32" height="32" src="{{ "images/icons/linkedin.png" | absURL }}" class="avatar">
-          </a>
+          <div><a class="muted-link" href="{{ .Site.Params.linkedin }}">
+            <i class="fab fa-linkedin-in"></i>
+            <span> LinkedIn </span>
+          </a></div>
           {{ end }}
 
-          {{ if .Site.Params.links }}
-            {{ range .Site.Params.links }}
-          {{ if .icon }}
-          <a class="avatar-group-item" href="{{ .href }}">
-            <img alt="@{{ .title }}" width="32" height="32" src="{{ .icon }}" class="avatar">
-          </a>
-          {{ else }}
-          <a class="avatar-group-item" href="{{ .href }}">
-            <img alt="@{{ .title }}" width="32" height="32" src='{{ "images/link.png" | absURL }}' class="avatar">
-          </a>
-          {{ end }}
-          {{ end }}
+          {{ if .Site.Params.scholar }}
+          <div><a class="muted-link" href="{{ .Site.Params.scholar }}">
+            <i class="fas fa-graduation-cap"></i>
+            <span> Google Scholar </span>
+          </a></div>
           {{ end }}
 
-          {{ if .Site.Params.rss }}
-          <a class="avatar-group-item" href="{{ "index.xml" | absURL }}">
-            <img alt="@rss" width="32" height="32" src="{{ "images/rss.png" | absURL }}" class="avatar">
-          </a>
-          {{ end }}
         </div>
       </div>
     </div>
