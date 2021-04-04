@@ -11,7 +11,7 @@ assetDir = "static"
     author = "Clément Rebuffel"
     avatar = "/images/profile-picture.png"
     shortdescription = "PhD Student in NLG"
-    longdescription = [["Made in France", ":fr:"], ["Data-to-Text Generation.", ""], ["Deep Learning aficionado.", ""]]
+    longdescription = [["Made in France", ":fr:"], ["Data-to-Text Generation", ""], ["Deep Learning aficionado", ""]]
     
     location = "France"
 

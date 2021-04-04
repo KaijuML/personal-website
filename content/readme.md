@@ -19,7 +19,7 @@ My PhD work has been focused on a critical aspect of DTG: **ensuring factualness
 
 ### Work
 
-I am a Research Engineer at BNP Paribas. In practice, I bridge the gap between research/academia and applications/enterprise. I am part of the team which developped the internal company-wide search engine, as well as a number of other tools (translation plateform, document NLP, etc.). I also act in an advisory capacity when I can: I have co-supervised an interneship on Gramatical Error Correction, and helped write several of my coworkers' research papers (accepted at international conferences).
+I am a Research Engineer at BNP Paribas. In practice, I bridge the gap between research/academia and applications/enterprise. I am part of the team which developped the internal company-wide search engine, as well as a number of other tools (translation plateform, document NLP, etc.). I also act in an advisory capacity when I can: I have co-supervised an internship on Gramatical Error Correction, and helped write several of my coworkers' research papers (accepted at international conferences).
 
 ### Hobbies
 
