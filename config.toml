@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://clement-rebuffel.com"
 languageCode = "en-us"
 title = "Clément Rebuffel"
 enableEmoji = "true"
