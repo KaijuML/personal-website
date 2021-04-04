@@ -28,7 +28,8 @@
     li {
       margin-top: 20px;
       border-radius: 10px;
-      align-self: start;
+      align-self: center;
+      justify-self: center;
 
       :hover {
         img,figcaption {
@@ -101,10 +102,32 @@
         }
       }
     }
-  }  
-  
+  }   
 }
-  
+
+.picture {
+
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      transition: .3s ease;
+      z-index: 1;
+    }
+
+    .content {
+      align-self: center;
+
+      p {
+        text-align: justify;
+      }
+
+    }
+}
 
 #cv-download {
   width: 175px; 
@@ -123,8 +146,19 @@
     color: inherit;
   }
 
+}
 
-  
 
+.recipe {
+  ul {
+    list-style-type:none;
+    margin-left: 50px;
+
+    li {
+        display: grid;
+        grid-template-columns: 25px 1fr;
+        // grid-gap: 1rem;
+    }
+  }
 }
   
