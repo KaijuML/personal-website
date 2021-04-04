@@ -4,6 +4,9 @@ title = "Clément Rebuffel"
 enableEmoji = "true"
 assetDir = "static"
 
+[markup.goldmark.renderer]
+    unsafe = true
+
 [params]
     author = "Clément Rebuffel"
     avatar = "/images/profile-picture.png"
