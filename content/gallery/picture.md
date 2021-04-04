@@ -1,7 +1,6 @@
 ---
 title: "Social Media Me"
 date: 2021-03-30
-draft: true
 src: "images/gallery/profile-picture.png"
 AltText: "Profile picture of Clément Rebuffel on social media"
 Caption: "Social Media"

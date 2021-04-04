@@ -1,7 +1,6 @@
 ---
 title: "Strawberry Gin"
 date: 2021-03-31
-draft: true
 src: "images/gallery/cocktail.png"
 AltText: "Strawberry Gin"
 Caption: "Strawberry Gin"
