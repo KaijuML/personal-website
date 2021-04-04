@@ -2,6 +2,20 @@
     text-align: justify;
 }
 
+.social-media {
+  ul {
+    list-style-type:none;
+
+    li {
+      a {
+        display: grid;
+        grid-template-columns: 25px 1fr;
+        // grid-gap: 1rem;
+      }
+    }
+  }
+}
+
 #gallery {
 
   ul {
@@ -13,92 +27,47 @@
 
     li {
       margin-top: 20px;
-      border: 1px solid #E2E2E2;
-      border-radius: .5rem;
+      border-radius: 10px;
+      align-self: start;
 
       p {
         font-size: 1rem;
         line-height: 1.5;
         padding: 1rem .75rem;
-        color: #666666;
-      }
-      a {
-        padding: .5rem 1rem;
-        margin: .5rem;
+        // color: #666666;
       }
 
       figure {
-        max-height: 300px;
+        // max-height: 400px;
         overflow: hidden;
-        border-top-left-radius: .5rem;
-        border-top-right-radius: .5rem;
+        border-radius: 10px;
+        // border-top-left-radius: 10px;
+        // border-top-right-radius: 10px;
         position: relative;
+        margin: 10px 15px;
 
         img {
           width: 100%;
+          border-radius: 10px;
         }
 
         figcaption {
           position: absolute;
-          bottom: 0;
-          background-color: rgba(0,0,0,.7);
+          bottom: 15px;
+          // background-color: rgba(0,0,0,.7);
+          background-color: rgba(150, 150, 150, .7);
           width: 100%;
 
           h3 {
-            color: white;
+            // color: #586069!important;
+            color: #222222;
             padding: .75rem;
             font-size: 1.25rem;
           }
         }
       }
     }
-  }
-
-  a {
-    background-color: goldenrod;
-    text-decoration: none;
-    color: white;
-    border-radius: .25rem;
-    text-align: center;
-    display: inline-block;
-    transition: all .3s;
-
-    :hover {
-      opacity: .6;
-    }
-  }
-  
-  /* Styles for the hero image */
-  .hero {
-    /* Photo by mnm.all on Unsplash */
-    padding: 4rem 2rem;
-    /* grid styles */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    align-items: center;
-    
-    h1 {
-      font-size: 4rem;
-      padding-bottom: 1rem;
-    }
-    article {
-      p {
-        font-size: 1.5rem;
-        font-weight: 200;
-      }
-
-      a {
-        padding: 1rem;
-        margin-top: .75rem;
-      }
-    } 
-  }
-  
-  .hero > * {
-    color: white;
-  }
-  
-  
+  }  
   
 }
   
