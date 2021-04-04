@@ -9,7 +9,7 @@ Caption: "Strawberry Gin"
 
 ### Strawberry Sunset Sour
 
-Strawberries are in season (YMMV depending on the season you're reading this). Here's a simple enough recipe to impress all your friends:
+Strawberries are in season! (YMMV depending on the season you're reading this.) Here's a simple enough recipe to impress all your friends:
 ____
 
 <div class="recipe">
@@ -22,7 +22,7 @@ ____
 
 <li>
     <i class="fas fa-wine-glass-alt"></i>
-    <span> 25ml simple siryp   </span>
+    <span> 25ml simple syrup<sup>1</sup>   </span>
 </li>
 
 <li>
@@ -45,4 +45,6 @@ ____
 ______
 
 
-Pour gin, sirup, lime and basil leaves into a shaker with ice. Shake until cold. Place in a glace and top with sparkling water.
+Pour gin, syrup, lime and basil leaves into a shaker with ice. Shake until cold. Place in a glass and top with sparkling water.
+
+<sub>1: Equal-parts sugar and water. Shake until sugar is disolved.
