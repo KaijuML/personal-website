@@ -44,10 +44,10 @@
             </div>
             <div class="f6 text-gray mt-2">
               <i class="far fa-clock"></i>
-              Created
-              <relative-time datetime="{{ .PublishDate.Format " Mon, 02 Jan 2006" }}" class="no-wrap"
-                title="{{ .PublishDate.Format " Mon, 02 Jan 2006" }}">
-                {{ .PublishDate.Format "Mon, 02 Jan 2006" }}
+              Published
+              <relative-time datetime="{{ .PublishDate.Format " Jan 2006" }}" class="no-wrap"
+                title="{{ .PublishDate.Format " Jan 2006" }}">
+                {{ .PublishDate.Format "Jan 2006" }}
               </relative-time>
             </div>
             
