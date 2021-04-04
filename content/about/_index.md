@@ -2,6 +2,13 @@ This site is powered by [Hugo][1], which is supposedly the _the world’s fastes
 
 If you are interested in building something similar for yourself, the code is freely available on my [Github profile][8]. If you found a bug, please feel free to raise an issue and we'll investigate.
 
+<div id="cv-download">
+    <a href="/CV_Clément_Rebuffel.pdf" download>
+    <i class="fas fa-download"></i>
+    <span>Download my CV</span>
+    </a>
+</div>
+
 For any inquiry, job offer, good joke you want to share, etc. you can contact me by email or via one of the following plateform:
 
 

@@ -71,4 +71,26 @@
   
 }
   
+
+#cv-download {
+  width: 175px; 
+  margin: 20px auto;
+
+  text-align: center;
+
+  a {
+    display: grid;
+    grid-template-columns: 25px auto;
+
+    border: solid 1px #E1E4E8;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    color: inherit;
+  }
+
+
+  
+
+}
   
