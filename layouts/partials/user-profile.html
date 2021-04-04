@@ -117,9 +117,13 @@
         </div>
       </div>
     </div>
-<!-- 
-    This is important, because in home + overview with define the overview block.
-    This section is able to place it at the correct place. -->
+
+    <!-- 
+      This is important, because in all list/single, we define the block we need block.
+      This section is able to place it at the correct place. 
+
+      Also, this section is always there, even on mobile (hence why mobile-menus)
+    -->
     <div class="flex-shrink-0 col-12 col-md-9 mb-4 mb-md-0">
       {{ partial "mobile-menus.html" . }}
 
@@ -128,7 +132,11 @@
       {{ else if eq .Section "publications"}}
         {{ block "publications" . }}{{ end }}
       {{ else if eq .Section "gallery"}}
-        {{ block "gallery" . }}{{ end }}
+        {{ if eq .Kind "section" }}
+          {{ block "gallery" . }}{{ end }}
+        {{ else }}
+          {{ block "picture" . }}{{ end }}
+        {{ end }}
       {{ else if eq .Section "about"}}
         {{ block "about" . }}{{ end }}
       {{ end }}

@@ -4,10 +4,12 @@
     <ul>
       {{ range (.Paginator 2).Pages }}
         <li>
-          <figure>
+          
+          <a href="{{ .Permalink }}">
+            <div class="icon"><i class="fas fa-search"></i></div>
             <img src="{{ .Params.src | absURL }}" alt="{{ .Params.AltText }}">
             <figcaption><h3>{{ .Params.Caption }}</h3></figcaption>
-          </figure>
+          </a>
           {{ with .Summary }}
             <p>
               {{ .Summary | safeHTML }}
