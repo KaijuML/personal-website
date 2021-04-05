@@ -12,6 +12,8 @@ assetDir = "static"
     avatar = "/images/profile-picture.png"
     shortdescription = "PhD Student in NLG"
     longdescription = [["Made in France", ":fr:"], ["Data-to-Text Generation", ""], ["Deep Learning aficionado", ""]]
+
+    metadescription = "Personal website of Clément Rebuffel. I'm a 3rd year PhD student in Natural Language Generation"
     
     location = "France"
 
