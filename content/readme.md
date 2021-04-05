@@ -15,7 +15,7 @@ I am interested in **Data-to-Text Generation** (DTG), i.e. building systems able
 
 These systems are crucial in environements where raw data is abundent, but hardly usable as is (e.g. health, sports, etc.), because end-users are more effective when provided with textual summaries than structured data<sup>1</sup>.
 
-My PhD work has been focused on a critical aspect of DTG: **ensuring factualness in system outputs**. Neural networks have proven shockingly good at producing fluent texts, but end-users care more about accuracy than about readability<sup>2</sup>. Wrong description that must be revised by human experts are of limited utility. In this direction, I have proposed novel encoding neural modules that are better suited for complex data, evaluation protocoles that can better discriminate between models, and training procedures that ensure models don't pick up on biased human behaviors (such as mentionning inverifiable facts).
+My PhD work has been focused on a critical aspect of DTG: **ensuring factualness in system outputs**. Neural networks have proven shockingly good at producing fluent texts, but end-users care more about accuracy than about readability<sup>2</sup>. Wrong descriptions that must be revised by human experts are of limited utility. In this direction, I have proposed novel encoding neural modules that are better suited for complex data, evaluation protocoles that can better discriminate between models, and training procedures that ensure models don't pick up on biased human behaviors (such as mentionning inverifiable facts).
 
 ### Work
 
