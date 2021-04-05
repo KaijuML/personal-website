@@ -9,7 +9,7 @@ assetDir = "static"
 
 [params]
     author = "Clément Rebuffel"
-    avatar = "/images/profile-picture.png"
+    avatar = "/images/avatar.jpeg"
     shortdescription = "PhD Student in NLG"
     longdescription = [["Made in France", ":fr:"], ["Data-to-Text Generation", ""], ["Deep Learning aficionado", ""]]
 

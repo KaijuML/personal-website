@@ -15,7 +15,7 @@
 <meta name="twitter:site" content="{{ .Site.BaseURL }}" />
 <meta name="twitter:creator" content="{{ .Site.Params.Author }}" />
 <meta name="twitter:image"
-content="{{ if .Params.src }}{{ .Params.src | absURL}}{{ else }} {{ .Site.Params.avatar }} {{ end }}">
+content="{{ if .Params.src }}{{ .Params.src | absURL}}{{ else }} {{ .Site.Params.avatar | absURL }} {{ end }}">
 
 
 <!-- OG data -->
@@ -26,7 +26,7 @@ content="{{ if .Params.src }}{{ .Params.src | absURL}}{{ else }} {{ .Site.Params
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:site_name" content="{{ .Title }}" />
 <meta property="og:image"
-  content="{{ if .Params.src }}{{ .Params.src | absURL}}{{ else }} {{ .Site.Params.avatar }} {{ end }}">
+  content="{{ if .Params.src }}{{ .Params.src | absURL}}{{ else }} {{ .Site.Params.avatar | absURL }} {{ end }}">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 {{ if isset .Params "date" }}
