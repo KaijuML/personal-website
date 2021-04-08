@@ -4,8 +4,11 @@ date: 2021-03-30
 src: "images/gallery/profile-picture.png"
 AltText: "Profile picture of Clément Rebuffel on social media"
 Caption: "Social Media"
----
 
+sitemap:
+    Priority: "0.4"
+    ChangeFreq: "monthly"
+---
 
 ### A crazy scientist with a handsome beard
 

@@ -4,6 +4,10 @@ date: 2021-03-31
 src: "images/gallery/cocktail.png"
 AltText: "Strawberry Gin"
 Caption: "Strawberry Gin"
+
+sitemap:
+    Priority: "0.4"
+    ChangeFreq: "monthly"
 ---
 
 ### Strawberry Sunset Sour

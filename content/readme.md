@@ -1,3 +1,8 @@
+---
+sitemap:
+    Priority: "1"
+    ChangeFreq: "monthly"
+---
 
 ## About Me
 
