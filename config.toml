@@ -1,11 +1,18 @@
 baseURL = "https://clement-rebuffel.com"
 languageCode = "en-us"
 title = "Clément Rebuffel"
+
 enableEmoji = "true"
 assetDir = "static"
 
+# This is not necessary, but removes some warnings as well
+# as removes "tags" from the site map
+disableKinds = ["taxonomyTerm"]
+
+# This anables for rendering arbitrary html in markdown files.
 [markup.goldmark.renderer]
     unsafe = true
+
 
 [params]
     author = "Clément Rebuffel"
