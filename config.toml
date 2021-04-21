@@ -17,6 +17,7 @@ disableKinds = ["taxonomyTerm"]
 [params]
     author = "Clément Rebuffel"
     avatar = "/images/avatar.jpeg"
+    favicon = "/images/favicon.png"
     shortdescription = "PhD Student in NLG"
     longdescription = [["Made in France", ":fr:"], ["Data-to-Text Generation", ""], ["Deep Learning aficionado", ""]]
 
