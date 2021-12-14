@@ -19,6 +19,8 @@
             <button class="btn btn-outline BtnGroup-item" disabled="disabled">Previous</button>
             {{ end }}
 
+            <a class="btn btn-outline BtnGroup-item" href="{{.Site.BaseURL}}/{{.Section}}">Back to {{.Section}}</a>
+
             {{ if .PrevInSection }}
             <a rel="nofollow" class="btn btn-outline BtnGroup-item" href="{{ .PrevInSection.URL }}">Next</a>
             {{ else }}

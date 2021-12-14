@@ -127,7 +127,7 @@
     </div>
 
     <!-- 
-      This is important, because in all list/single, we define the block we need block.
+      This is important, because in all list/single, we define the block we need with "block".
       This section is able to place it at the correct place. 
 
       Also, this section is always there, even on mobile (hence why mobile-menus)
@@ -139,6 +139,12 @@
         {{ block "overview" . }}{{ end }}
       {{ else if eq .Section "publications"}}
         {{ block "publications" . }}{{ end }}
+      {{ else if eq .Section "blog"}}
+        {{ if eq .Kind "section" }}
+          {{ block "blog" . }}{{ end }}
+        {{ else }}
+         {{ block "blogpost" . }}{{ end }}
+        {{ end }}
       {{ else if eq .Section "gallery"}}
         {{ if eq .Kind "section" }}
           {{ block "gallery" . }}{{ end }}

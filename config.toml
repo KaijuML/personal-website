@@ -18,8 +18,8 @@ disableKinds = ["taxonomyTerm"]
     author = "Clément Rebuffel"
     avatar = "/images/avatar.jpeg"
     favicon = "/images/favicon.png"
-    shortdescription = "PhD Student in NLG"
-    longdescription = [["Made in France", ":fr:"], ["Data-to-Text Generation", ""], ["Deep Learning aficionado", ""]]
+    shortdescription = "Quant Researcher at G-Research"
+    longdescription = [["Made in France", ":fr:"], ["Deep Learning aficionado", ""], ["Natural Language Processing", ":books:"]]
 
     metadescription = "Personal website of Clément Rebuffel. I'm a 3rd year PhD student in Natural Language Generation"
     
