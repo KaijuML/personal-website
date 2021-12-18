@@ -21,9 +21,9 @@ disableKinds = ["taxonomyTerm"]
     shortdescription = "Quant Researcher at G-Research"
     longdescription = [["Made in France", ":fr:"], ["Deep Learning aficionado", ""], ["Natural Language Processing", ":books:"]]
 
-    metadescription = "Personal website of Clément Rebuffel. I'm a 3rd year PhD student in Natural Language Generation"
+    metadescription = "Personal website of Clément Rebuffel. I'm a Quant Researcher at G-Research and PhD in Natural Language Generation"
     
-    location = "France"
+    location = "London, UK"
 
     email = "clement.rebuffel@protonmail.com"
     github = "https://github.com/KaijuML"

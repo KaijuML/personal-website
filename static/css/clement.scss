@@ -1,10 +1,10 @@
 .markdown-body p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .social-media {
   ul {
-    list-style-type:none;
+    list-style-type: none;
 
     li {
       a {
@@ -17,13 +17,11 @@
 }
 
 #gallery {
-
   ul {
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 1rem;
-    list-style-type:none;
+    list-style-type: none;
 
     li {
       margin-top: 20px;
@@ -32,22 +30,21 @@
       justify-self: center;
 
       :hover {
-        img,figcaption {
+        img,
+        figcaption {
           filter: blur(3px);
           opacity: 0.5;
         }
-        
+
         .icon {
           opacity: 1;
         }
-        
       }
-
 
       p {
         font-size: 1rem;
         line-height: 1.5;
-        padding: 1rem .75rem;
+        padding: 1rem 0.75rem;
         // color: #666666;
       }
 
@@ -69,20 +66,18 @@
           left: calc(50% - 25px);
           z-index: 2;
           opacity: 0;
-          transition: .3s ease;
-          
+          transition: 0.3s ease;
+
           svg {
             width: 50px;
             height: 50px;
           }
-
         }
-
 
         img {
           width: 100%;
           border-radius: 10px;
-          transition: .3s ease;
+          transition: 0.3s ease;
           z-index: 1;
         }
 
@@ -90,47 +85,45 @@
           position: absolute;
           bottom: 15px;
           // background-color: rgba(0,0,0,.7);
-          background-color: rgba(150, 150, 150, .7);
+          background-color: rgba(150, 150, 150, 0.7);
           width: 100%;
 
           h3 {
             // color: #586069!important;
             color: #222222;
-            padding: .75rem;
+            padding: 0.75rem;
             font-size: 1.25rem;
           }
         }
       }
     }
-  }   
+  }
 }
 
 .picture {
-
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1rem;
 
-    img {
-      width: 100%;
-      border-radius: 10px;
-      transition: .3s ease;
-      z-index: 1;
+  img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    z-index: 1;
+  }
+
+  .content {
+    align-self: center;
+
+    p {
+      text-align: justify;
     }
-
-    .content {
-      align-self: center;
-
-      p {
-        text-align: justify;
-      }
-
-    }
+  }
 }
 
 #cv-download {
-  width: 175px; 
+  width: 175px;
   margin: 10px 20px;
 
   text-align: center;
@@ -139,26 +132,23 @@
     display: grid;
     grid-template-columns: 25px auto;
 
-    border: solid 1px #E1E4E8;
+    border: solid 1px #e1e4e8;
     padding: 10px 20px;
     border-radius: 10px;
 
     color: inherit;
   }
-
 }
-
 
 .recipe {
   ul {
-    list-style-type:none;
+    list-style-type: none;
     margin-left: 50px;
 
     li {
-        display: grid;
-        grid-template-columns: 25px 1fr;
-        // grid-gap: 1rem;
+      display: grid;
+      grid-template-columns: 25px 1fr;
+      // grid-gap: 1rem;
     }
   }
 }
-  
