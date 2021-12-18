@@ -32,17 +32,19 @@
     <div class="paginate-container">
         <div class="BtnGroup">
             {{ if .NextInSection }}
-            <a rel="nofollow" class="btn btn-outline BtnGroup-item" href="{{ .NextInSection.URL }}">Previous</a>
+            <a rel="nofollow" class="btn btn-outline BtnGroup-item" href="{{ .NextInSection.URL }}">{{ T "previous" }}</a>
             {{ else }}
-            <button class="btn btn-outline BtnGroup-item" disabled="disabled">Previous</button>
+            <button class="btn btn-outline BtnGroup-item" disabled="disabled">{{ T "previous" }}</button>
             {{ end }}
 
-            <a  class="btn btn-outline BtnGroup-item" href="{{.Site.BaseURL}}/{{.Section}}">Back to list</a>
+            {{ with .Site.GetPage "section" .Section }}
+                <a class="btn btn-outline BtnGroup-item" href="{{ .RelPermalink }}">{{ T "back-blog" }}</a>
+            {{ end }}
 
             {{ if .PrevInSection }}
-            <a rel="nofollow" class="btn btn-outline BtnGroup-item" href="{{ .PrevInSection.URL }}">Next</a>
+            <a rel="nofollow" class="btn btn-outline BtnGroup-item" href="{{ .PrevInSection.URL }}">{{ T "next" }}</a>
             {{ else }}
-            <button class="btn btn-outline BtnGroup-item" disabled="disabled">Next</button>
+            <button class="btn btn-outline BtnGroup-item" disabled="disabled">{{ T "next" }}</button>
             {{ end }}
         </div>
     </div>

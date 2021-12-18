@@ -1,0 +1,47 @@
+######## Section titles #########
+
+[home]
+    other = "Home"
+
+[publications]
+    other = "Publications"
+
+[blog]
+    other = "Blog"
+
+[gallery]
+    other = "Gallery"
+
+[about]
+    other = "About"
+
+######## Profile info ###########
+
+[cv-download]
+    other = "Download my CV"
+
+[social-network-header]
+    other = "Find me & Follow me"
+
+
+####### Navigation ###############
+
+[next]
+    other = "Next"
+
+[previous]
+    other = "Previous"
+
+
+[back-blog]
+    other = "Back to list"
+    
+[back-gallery]
+    other = "Back to Gallery"
+
+
+####### Section: publication #####
+
+
+[published]
+  other = "Published"

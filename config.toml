@@ -2,7 +2,7 @@ baseURL = "https://clement-rebuffel.com"
 title = "Clément Rebuffel"
 
 defaultContentLanguage = 'en'
-languageCode = "en"
+languageCode = "en-us"
 
 enableEmoji = "true"
 assetDir = "static"
@@ -19,17 +19,27 @@ disableKinds = ["taxonomyTerm"]
 [markup.goldmark.renderer]
     unsafe = true
 
+
 [languages]
   [languages.en]
-    weight = 2
+    weight = 1  # Always make sure defaultContentLanguage has lowest weight
     LanguageName = "English"
+
     shortdescription = "Quant Researcher at G-Research"
+    metadescription = "Personal website of Clément Rebuffel. I'm a Quant Researcher at G-Research and PhD in Natural Language Generation"
+
+
+    location = "London, UK"
+    
 
   [languages.fr]
-    weight = 1
+    weight = 2
     LanguageName = "Français"
-    shortdescription = "Quant Researcher chez G-Research"
 
+    shortdescription = "Quant Researcher chez G-Research"
+    metadescription = "Site personnel de Clément Rebuffel. Je suis chercheur quant chez G-Research et docteur en Génération de Texte en Langage Naturel."
+
+    location = "Londres, Royaume Uni"
 
 
 
@@ -39,9 +49,6 @@ disableKinds = ["taxonomyTerm"]
     favicon = "/images/favicon.png"
     longdescription = [["Made in France", ":fr:"], ["Deep Learning aficionado", ""], ["Natural Language Processing", ":books:"]]
 
-    metadescription = "Personal website of Clément Rebuffel. I'm a Quant Researcher at G-Research and PhD in Natural Language Generation"
-    
-    location = "London, UK"
 
     email = "clement.rebuffel@protonmail.com"
     github = "https://github.com/KaijuML"
