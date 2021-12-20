@@ -2,8 +2,8 @@
 title: "Corsica"
 date: 2021-03-29
 src: "images/gallery/corsica.jpeg"
-AltText: "Clément Rebuffel on a horse, in the sea in Corsica"
-Caption: "Corsica hike"
+AltText: "Clément Rebuffel à cheval, dans la mer en Corse"
+Caption: "Rando Corse"
 
 sitemap:
   Priority: "0.4"

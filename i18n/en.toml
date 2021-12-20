@@ -45,3 +45,9 @@
 
 [published]
   other = "Published"
+
+
+
+###### Section: blog ##############
+[coming-soon]
+    other = "coming soon"

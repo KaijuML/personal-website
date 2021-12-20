@@ -10,7 +10,7 @@
     other = "Blog"
 
 [gallery]
-    other = "Gallerie"
+    other = "Galerie"
 
 [about]
     other = "À-propos"
@@ -37,7 +37,7 @@
     other = "Retour à la liste"
     
 [back-gallery]
-    other = "Retour à la Gallerie"
+    other = "Retour à la Galerie"
 
 
 ####### Section: publication #####
@@ -45,3 +45,10 @@
 
 [published]
   other = "Publié en"
+
+
+
+
+###### Section: blog ##############
+[coming-soon]
+    other = "À venir prochainement"
