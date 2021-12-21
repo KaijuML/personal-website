@@ -16,6 +16,24 @@
   }
 }
 
+#cv-download {
+  // width: 250px;
+  margin: 10px 20px;
+
+  text-align: center;
+
+  a {
+    display: grid;
+    grid-template-columns: 25px auto;
+
+    border: solid 1px #e1e4e8;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    color: inherit;
+  }
+}
+
 #gallery {
   ul {
     display: grid;
@@ -122,24 +140,6 @@
   }
 }
 
-#cv-download {
-  // width: 250px;
-  margin: 10px 20px;
-
-  text-align: center;
-
-  a {
-    display: grid;
-    grid-template-columns: 25px auto;
-
-    border: solid 1px #e1e4e8;
-    padding: 10px 20px;
-    border-radius: 10px;
-
-    color: inherit;
-  }
-}
-
 .recipe {
   ul {
     list-style-type: none;
@@ -149,6 +149,51 @@
       display: grid;
       grid-template-columns: 25px 1fr;
       // grid-gap: 1rem;
+    }
+  }
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-main-div {
+  position: relative;
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 30px;
+  color: var(--color-underlinenav-text);
+  text-align: center;
+  white-space: nowrap;
+  background-color: initial;
+  border: 0;
+  border-bottom: 2px solid transparent;
+
+  .dropdown-menu-button {
+    cursor: pointer;
+    width: 100px;
+  }
+
+  // Dropdown Content (Hidden by Default)
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    overflow: visible;
+    width: 100px;
+
+    // Showing dropdown menu (is added by js)
+    &.currently-showing {
+      display: block;
+      z-index: 10000;
+    }
+
+    a {
+      color: inherit;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    :hover {
+      // background-color: #1f6feb;
+      color: white;
     }
   }
 }
