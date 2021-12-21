@@ -1,4 +1,5 @@
 ---
+Weight: 5
 sitemap:
   Priority: "0.4"
   ChangeFreq: "monthly"
