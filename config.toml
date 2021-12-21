@@ -9,7 +9,7 @@ assetDir = "static"
 
 # This is necessary due to a bug (?) in how Hugo stores its sites
 # See: https://discourse.gohugo.io/t/multilingual-page-404-not-found/31729/3
-publishDir = "docs"
+publishDir = "public"
 
 # This is not necessary, but removes some warnings as well
 # as removes "tags" from the site map
