@@ -4,7 +4,7 @@
     <ul>
       {{ range (.Paginator 2).Pages }}
         <li>
-          <a href="{{ .Permalink }}">
+          <a href="{{ .RelPermalink }}">
             <div class="icon"><i class="fas fa-search"></i></div>
             <img src="{{ .Params.src | relURL }}" alt="{{ .Params.AltText }}">
             <figcaption><h3>{{ .Params.Caption }}</h3></figcaption>
