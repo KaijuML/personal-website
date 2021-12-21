@@ -6,7 +6,7 @@
         <li>
           <a href="{{ .Permalink }}">
             <div class="icon"><i class="fas fa-search"></i></div>
-            <img src="{{ .Params.src | absURL }}" alt="{{ .Params.AltText }}">
+            <img src="{{ .Params.src | relURL }}" alt="{{ .Params.AltText }}">
             <figcaption><h3>{{ .Params.Caption }}</h3></figcaption>
           </a>
         </li>
