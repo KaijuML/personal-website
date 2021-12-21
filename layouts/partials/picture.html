@@ -4,7 +4,7 @@
 <div>
 
     <div class="picture">
-        <img src="{{ .Params.src | absURL }}" alt="{{ .Params.AltText }}">
+        <img src="{{ .Params.src | relURL }}" alt="{{ .Params.AltText }}">
 
         <div class="content">
             {{ .Content }}
