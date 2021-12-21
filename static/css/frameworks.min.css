@@ -4133,8 +4133,6 @@ a.tabnav-extra:hover {
 }
 .UnderlineNav {
   display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
   box-shadow: inset 0 -1px 0 var(--color-border-secondary);
   justify-content: space-between;
 }
