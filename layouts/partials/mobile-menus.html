@@ -22,7 +22,7 @@
         </a>
 
         {{ range .Site.Sections }}
-          <a title="{{ .Language.LanguageName }}" href="{{ .Permalink }}" class="dropdown-item">
+          <a title="{{ .Language.LanguageName }}" href="{{ .RelPermalink }}" class="dropdown-item">
             {{ T .Section }}
           </a>
         {{ end }}
@@ -44,7 +44,7 @@
 
       <div id="languageDropdownMenu-mobile" class="Box dropdown-content">
         {{ range $.AllTranslations }}
-        <a title="{{ .Language.LanguageName }}" href="{{ .Permalink }}" class="dropdown-item">
+        <a title="{{ .Language.LanguageName }}" href="{{ .RelPermalink }}" class="dropdown-item">
     
           {{ .Language.LanguageName }}
         </a>
