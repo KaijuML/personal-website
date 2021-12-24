@@ -1,9 +1,15 @@
 baseURL = "https://clement-rebuffel.com"
-languageCode = "en-us"
 title = "Clément Rebuffel"
+
+defaultContentLanguage = 'en'
+languageCode = "en-us"
 
 enableEmoji = "true"
 assetDir = "static"
+
+# This is necessary due to a bug (?) in how Hugo stores its sites
+# See: https://discourse.gohugo.io/t/multilingual-page-404-not-found/31729/3
+publishDir = "public"
 
 # This is not necessary, but removes some warnings as well
 # as removes "tags" from the site map
@@ -14,16 +20,35 @@ disableKinds = ["taxonomyTerm"]
     unsafe = true
 
 
+[languages]
+  [languages.en]
+    weight = 1  # Always make sure defaultContentLanguage has lowest weight
+    LanguageName = "English"
+
+    shortdescription = "Quant Researcher at G-Research"
+    metadescription = "Personal website of Clément Rebuffel. I'm a Quant Researcher at G-Research and PhD in Natural Language Generation"
+
+
+    location = "London, UK"
+    
+
+  [languages.fr]
+    weight = 2
+    LanguageName = "Français"
+
+    shortdescription = "Quant Researcher chez G-Research"
+    metadescription = "Site personnel de Clément Rebuffel. Je suis chercheur quant chez G-Research et docteur en Génération de Texte en Langage Naturel."
+
+    location = "Londres, Royaume Uni"
+
+
+
 [params]
     author = "Clément Rebuffel"
     avatar = "/images/avatar.jpeg"
     favicon = "/images/favicon.png"
-    shortdescription = "Quant Researcher at G-Research"
     longdescription = [["Made in France", ":fr:"], ["Deep Learning aficionado", ""], ["Natural Language Processing", ":books:"]]
 
-    metadescription = "Personal website of Clément Rebuffel. I'm a Quant Researcher at G-Research and PhD in Natural Language Generation"
-    
-    location = "London, UK"
 
     email = "clement.rebuffel@protonmail.com"
     github = "https://github.com/KaijuML"

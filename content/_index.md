@@ -1,5 +1,6 @@
 ---
 Lastmod: 2021-04-08
+Weight: 1
 sitemap:
   Priority: "1"
   ChangeFreq: "monthly"

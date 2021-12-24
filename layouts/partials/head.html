@@ -1,24 +1,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <script type="application/javascript" src='{{ "js/theme-mode.js" | absURL }}'></script>
-    <link rel="stylesheet" href='{{ "css/frameworks.min.css" | absURL }}' />
-    <link rel="stylesheet" href='{{ "css/github.min.css" | absURL }}' />
-    <link rel="stylesheet" href='{{ "css/github-style.css" | absURL }}' />
-    <link rel="stylesheet" href='{{ "css/light.css" | absURL }}' />
-    <link rel="stylesheet" href='{{ "css/dark.css" | absURL }}' />
-    <link rel="stylesheet" href='{{ "css/syntax.css" | absURL }}' />
+    <script type="application/javascript" src='{{ "js/theme-mode.js" | relURL }}'></script>
+    <link rel="stylesheet" href='{{ "css/frameworks.min.css" | relURL }}' />
+    <link rel="stylesheet" href='{{ "css/github.min.css" | relURL }}' />
+    <link rel="stylesheet" href='{{ "css/github-style.css" | relURL }}' />
+    <link rel="stylesheet" href='{{ "css/light.css" | relURL }}' />
+    <link rel="stylesheet" href='{{ "css/dark.css" | relURL }}' />
+    <link rel="stylesheet" href='{{ "css/syntax.css" | relURL }}' />
     <title>{{ if .IsHome }}{{ else }}{{ humanize .Section }} - {{ end }}{{ .Site.Title }}</title>
     {{ if .Site.Params.favicon }}
     <link rel="icon" type="image/x-icon" href='{{ .Site.Params.favicon  }}'>
     {{ else }}
-    <link rel="icon" type="image/x-icon" href='{{ "images/favicon.ico" | absURL }}'>
+    <link rel="icon" type="image/x-icon" href='{{ "images/favicon.ico" | relURL }}'>
     {{ end }}
     <meta name="theme-color" content="#1e2327">
 
     <!-- Including custom CSS, using an SCSS file -->
     {{ $style := resources.Get "css/clement.scss" | resources.ToCSS | resources.Fingerprint "sha512" }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
 
     {{ partial "seo" . }}
 
