@@ -5,7 +5,7 @@ sitemap:
   ChangeFreq: "monthly"
 ---
 
-## About Me
+# About Me
 
 I am an **NLP Researcher**, and **Quant** at [**G-Research**](https://www.gresearch.co.uk/about/).
 
