@@ -19,6 +19,9 @@ disableKinds = ["taxonomyTerm"]
 [markup.goldmark.renderer]
     unsafe = true
 
+# https://gohugo.io/content-management/syntax-highlighting/#generate-syntax-highlighter-css
+[markup.highlight]
+    noClasses = false
 
 [languages]
   [languages.en]

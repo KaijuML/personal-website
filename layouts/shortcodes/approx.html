@@ -1,0 +1,7 @@
+<button class="approx-sign-btn" data-explanation="{{ .Get `id` }}">
+    <i class="fas fa-exclamation-circle approx-sign"></i>
+</button>
+
+<p id='approx-explain-{{ .Get `id` }}' class="approx-explain">
+   {{ .Inner | markdownify }} 
+</p>

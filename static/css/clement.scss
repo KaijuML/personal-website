@@ -197,3 +197,86 @@
     }
   }
 }
+
+.markdown-body {
+  #table-of-content {
+    background-color: var(--color-bg-tertiary);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 16px;
+
+    h3 {
+      margin-top: 0px;
+    }
+
+    #approx-warning-shortcode {
+      margin-bottom: 0px;
+    }
+  }
+
+  // Create an offset when anchoring links to h2
+  h2 {
+    border-top: 50px solid transparent;
+    margin-top: -50px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+  }
+
+  @media screen and (min-width: 1280px) {
+    h2 {
+      border-top: 74px solid transparent;
+      margin-top: -74px;
+      -webkit-background-clip: padding-box;
+      -moz-background-clip: padding;
+      background-clip: padding-box;
+    }
+  }
+
+  // Remove empty <p>, due to a bug in hugo
+  // See:
+  //     https://github.com/gohugoio/hugo/issues/1642
+  //     https://discourse.gohugo.io/t/empty-p-p-tags-generated-when-using-shortcodes/3439/3
+  p:empty {
+    display: none;
+  }
+
+  .approx-sign-btn {
+    background: none;
+    color: inherit;
+    border: none;
+
+    .approx-sign {
+      color: inherit;
+
+      margin: 0px 3px 0px 4px;
+      width: 16px !important;
+      height: 16px !important;
+    }
+  }
+
+  .approx-sign {
+    margin: 0px 3px 0px 4px;
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .approx-explain {
+    transition: opacity 1s, height 1s;
+
+    border: 1px solid var(--color-border-primary);
+    border-radius: 12px;
+
+    opacity: 0;
+    height: 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+
+    &.active {
+      margin-bottom: 16px;
+      height: auto;
+      opacity: 1;
+      padding: 10px;
+    }
+  }
+}
