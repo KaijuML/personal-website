@@ -15,13 +15,13 @@ Python's Dict are everywhere, and if you code in Python, you're probably using t
 
 What we mean when we say O(1), is that looking for, inserting or removing an element from a Dict is done in constant time, and does not depend on the number of elements currently in the Dict. List also have an O(1) insertion time (simply add the element at the end of the list) but have lookup and removal that are O(N): to look up a specific element you need to go through the entire List (consider the case where the element is the last, or worst: not in the list!) and to remove the element, you need first to look it up, then rebuild the list after the removed element.
 
-This blog post attempts to explain the magic behind Python's Dict, by reconstructing it from scratch using only Python code. Most of the information contained in this blog post can be traced back either directly from [cpython source code](https://github.com/python/cpython/blob/main/Objects/dictobject.c) and the two top answers of [How are Python's Built In Dictionaries Implemented?](https://stackoverflow.com/questions/327311/how-are-pythons-built-in-dictionaries-implemented) on StackOverflow.
+This blog post attempts to explain the magic behind Python's Dict, by reconstructing it from scratch using only Python code. Most of the information contained in this blog post can be traced back either directly to [cpython source code](https://github.com/python/cpython/blob/main/Objects/dictobject.c) or the two top answers of [How are Python's Built In Dictionaries Implemented?](https://stackoverflow.com/questions/327311/how-are-pythons-built-in-dictionaries-implemented) on StackOverflow.
 
 {{< table-of-content >}}
 
 1. [Introduction](#introduction): we briefly describe a Dict's behavior
 1. [Hashing and building the base dict](#hashing-and-building-the-base-dict): we learn how Python's _hash_ function can be used to magically _know_ where things are stored without having to look everywhere
-1. [Open Adressing & Tombs](#dealing-with-collisions-open-adressing-and-tombs): we deal with collisions using _open addressing_, a smart search function. We don't forget to use tombs when items are deleted...
+1. [Open Addressing & Tombs](#dealing-with-collisions-open-addressing-and-tombs): we deal with collisions using _open addressing_, a smart search function. We don't forget to use tombs when items are deleted...
 1. [Variable size Dict](#variable-size-dict): we dynamically grow our Dict's size, depending on how many items are stored
 1. [Memory Efficiency & Dict Ordering](#memory-efficiency-and-dict-ordering): we make the Dict's internal storage memory efficient, and at the same time sort items by insertion order
 
@@ -134,7 +134,7 @@ print(countries_to_capital['UK'])
 
 Neat, it does work! Or does it?
 
-## Dealing with collisions: Open Adressing and Tombs
+## Dealing with collisions: Open Addressing and Tombs
 
 You are probably wondering about what happens when two keys have the same hash (not probable), or when their hashes have the same modulo (happens often). We call such situations _collisions._
 
@@ -288,7 +288,7 @@ class PythonDict:
 
 ## Variable size Dict
 
-Ok, but what about [pigeon holes](https://en.wikipedia.org/wiki/Pigeonhole_principle)? We're starting with an internal sotrage List of size 8, but Python's Dict should be able to handle more than eight key-value pairs! So what's the trick? The trick is the _resizable_ of _resizable hash tables._ When we're nearing completion of the storage list, we simply rebuild the dict with a bigger initial list (line 53-54). That's it, that's the trick. {{< approx id="resizable">}}
+Ok, but what about [pigeon holes](https://en.wikipedia.org/wiki/Pigeonhole_principle)? We're starting with an internal storage List of size 8, but Python's Dict should be able to handle more than eight key-value pairs! So what's the trick? The trick is the _resizable_ of _resizable hash tables._ When we're nearing completion of the storage list, we simply rebuild the dict with a bigger initial list (line 53-54). That's it, that's the trick. {{< approx id="resizable">}}
 
 In practice, [the load factor is kept under 2/3](https://github.com/python/cpython/blob/main/Objects/dictobject.c#L164), meaning that the Dict is resized when it is more than 2/3rd full.
 
