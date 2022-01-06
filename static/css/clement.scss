@@ -2,6 +2,12 @@
   text-align: justify;
 }
 
+#headerStuck {
+  @media screen and (min-width: 1280px) {
+    margin-top: 15px;
+  }
+}
+
 .social-media {
   ul {
     list-style-type: none;
