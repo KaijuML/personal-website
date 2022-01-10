@@ -11,7 +11,7 @@ draft: False
 
 ## Motivation
 
-Python's Dict are everywhere, and if you code in Python, you're probably using them everyday. For instance, the famous [Two Sum puzzle](https://leetcode.com/problems/two-sum/) can easily be solved using a Dict. Why? Because contrary to a List, a Dict can be used for O(1) lookup, insertion and removal.
+Python's Dict is everywhere, and if you code in Python, you're probably using it everyday. For instance, the famous [Two Sum puzzle](https://leetcode.com/problems/two-sum/) can easily be solved using a Dict. Why? Because contrary to a List, a Dict can be used for O(1) lookup, insertion and removal.
 
 What we mean when we say O(1), is that looking for, inserting or removing an element from a Dict is done in constant time, and does not depend on the number of elements currently in the Dict. List also have an O(1) insertion time (simply add the element at the end of the list) but have lookup and removal that are O(N): to look up a specific element you need to go through the entire List (consider the case where the element is the last, or worst: not in the list!) and to remove the element, you need first to look it up, then rebuild the list after the removed element.
 
@@ -186,7 +186,7 @@ print(letters[9])
 >>> 'i'
 ```
 
-All good right? Wait a minute, what about removing objetcs? In fact, we're curently in trouble. Consider the situation from the above snippet: we’ve added a key-value pair `p1` (`1, 'a'`) -- line 2, and then try and add a second pair `p2` (`9, 'i'`) -- line 3 -- that unfortunately collides with `p1`. We use our `smart_search` to find the next good empty spot, and place `p2` there. Good. If we’re to search for `p2` again, no problem: we’ll compute its hash and modulo, see that there is `p1` in its place, reuse the smart_search and eventually arrive a the correct spot -- lines 5-9.
+All good right? Wait a minute, what about removing objects? In fact, we're curently in trouble. Consider the situation from the above snippet: we’ve added a key-value pair `p1` (`1, 'a'`) -- line 2, and then try and add a second pair `p2` (`9, 'i'`) -- line 3 -- that unfortunately collides with `p1`. We use our `smart_search` to find the next good empty spot, and place `p2` there. Good. If we’re to search for `p2` again, no problem: we’ll compute its hash and modulo, see that there is `p1` in its place, reuse the smart_search and eventually arrive a the correct spot -- lines 5-9.
 
 But what if we delete `p1` and _then_ search for `p2`? That's where our troubles come from: since `p1` is not in our storage anymore, `smart_search`'s first guess using `p2`'s computed hash and modulo will find an empty spot (which before collided with `p1)`, and we will simply think that `p2` has never been added -- lines 7-8.
 
