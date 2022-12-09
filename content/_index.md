@@ -20,7 +20,6 @@ Right now, I am interested in all things NLP:
 
 - Learning representations & embeddings of sentence, entity, etc
 - Large Language Models
-- Multilinguality
 
 Before that, I was a Research Engineer at BNP Paribas. In practice, I bridged the gap between research/academia and applications/enterprise, being part of the team which developped the internal company-wide search engine, as well as a number of other tools (translation plateform, document NLP, etc.).
 

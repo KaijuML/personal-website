@@ -11,14 +11,14 @@ draft: False
 
 ## Motivation
 
-Here's a practical list of all accepted papers at EMNLP 2022. Click on sessions to expend/reduce them.
+EMNLP 2022 is as great as can be, but navigating the official lists of accepted papers proves tricky. Here's a practical, mobile-friendly, list of all accepted papers at EMNLP 2022. Click on sessions to expend/reduce them.
 
-{{< table-of-content >}}
+Note that the [official website](https://2022.emnlp.org/) provides two documents:
 
-1. [Friday 9th December](#friday-9-dec)
-   1. [Session 2 - 11:00-12:30](#session-2-11:00-12:30)
+- an excel file with titles, authors, tracks
+- a PDF with timestamps and abstracts
 
-{{< /table-of-content >}}
+This page has been (mostly) automatically generated using both. If you spot a mistake, I'm happy to fix it, just send me an email! Same goes if you have a clever idea on how to add links to papers.
 
 ## Friday 9th December
 
@@ -7162,7 +7162,6 @@ Here's a practical list of all accepted papers at EMNLP 2022. Click on sessions 
 </div>
 </div>
 
-
 <div class="emnlp-track collapsable">
 
 <button class="emnlp-track-btn collapse-btn" data-collapseId="s8t1">
@@ -7374,7 +7373,6 @@ Here's a practical list of all accepted papers at EMNLP 2022. Click on sessions 
 </div>
 </div>
 
-
 <div class="emnlp-track collapsable">
 
 <button class="emnlp-track-btn collapse-btn" data-collapseId="s8t2">
@@ -7530,7 +7528,6 @@ Here's a practical list of all accepted papers at EMNLP 2022. Click on sessions 
 </div>
 </div>
 
-
 <div class="emnlp-track collapsable">
 
 <button class="emnlp-track-btn collapse-btn" data-collapseId="s8t3">
@@ -7677,7 +7674,6 @@ Here's a practical list of all accepted papers at EMNLP 2022. Click on sessions 
     
 </div>
 </div>
-
 
 <div class="emnlp-track collapsable">
 
@@ -7834,7 +7830,6 @@ Here's a practical list of all accepted papers at EMNLP 2022. Click on sessions 
 </div>
 </div>
 
-
 <div class="emnlp-track collapsable">
 
 <button class="emnlp-track-btn collapse-btn" data-collapseId="s8t5">
@@ -7989,7 +7984,6 @@ Here's a practical list of all accepted papers at EMNLP 2022. Click on sessions 
     
 </div>
 </div>
-
 
 <div class="emnlp-track collapsable">
 
