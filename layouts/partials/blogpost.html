@@ -18,6 +18,9 @@
                         </path>
                     </svg>
                     README<span class="text-gray-light">.md</span>
+                    <relative-time datetime="{{ .PublishDate.Format "02 Jan 2006" }}" class="no-wrap" title="{{ .PublishDate.Format "02 Jan 2006" }}">
+                        ({{ .PublishDate.Format "02 Jan 2006" }})
+                    </relative-time>
                 </div>
             </div>
 

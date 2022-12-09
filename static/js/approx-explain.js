@@ -11,5 +11,3 @@ document.querySelectorAll('.approx-sign-btn').forEach((explainButton) => {
     }
 
 });
-
-// alert('All events created')

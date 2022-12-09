@@ -53,7 +53,7 @@ for key, value in country_to_capital:
     break
 ```
 
-Dict are practical, but also fast: looking for UK's capital is done at the same speed, no matter the size of our Dict (i.e. the number of country-capital pairs already inserted), contrasting with Lists where you could possibly end up parsing the entire list (which happens everytime you're looking for something that's not there!).
+Dict is practical, but also fast: looking for UK's capital is done at the same speed, no matter the size of our Dict (i.e. the number of country-capital pairs already inserted), contrasting with List where you could possibly end up parsing the entire list (which happens everytime you're looking for something that's not there!).
 
 But how does this work behind the curtains? Well, from the point of view of the [Python FAQ](https://docs.python.org/3/faq/design.html#how-are-dictionaries-implemented-in-cpython) itself, "_CPython’s dictionaries are implemented as **resizable hash tables**_". What does this mean? Let's find out!
 
@@ -136,7 +136,7 @@ Neat, it does work! Or does it?
 
 ## Dealing with collisions: Open Addressing and Tombs
 
-You are probably wondering about what happens when two keys have the same hash (not probable), or when their hashes have the same modulo (happens often). We call such situations _collisions._
+You are probably wondering about what happens when two keys have the same hash (not probable), or when their hashes have the same modulo (happens often). We call such situations _collisions_.
 
 ```python {linenos=inline}
 letters = PythonDict()
