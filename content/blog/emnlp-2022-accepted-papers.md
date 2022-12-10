@@ -1576,16 +1576,16 @@ This page has been (mostly) automatically generated using both. If you spot a mi
 <div class="emnlp-track collapsable">
 
 <button class="emnlp-track-btn collapse-btn" data-collapseId="s2t2">
-  Virtual Portal 3 16:00-17:30 (Hall A, Room B) <span> True </span>
+  Virtual Portal 3 <span> (Hall A, Room B) </span>
 </button>
 
 <div id='collapseId-s2t2' class="emnlp-track-content">
   
 <div class=emnlp-paper>
-<div class="emnlp-paper-time"> Due to rapidly growing cyber-attacks and security vulnerabilities, many reports on cyber-threat intelligence  are being published daily. </div>
+<div class="emnlp-paper-time"> 16:00-17:30   </div>
 <div class="emnlp-paper-content">
-<div class="emnlp-paper-title"> Youngja Park and Taesung Lee </div>
-<div class="emnlp-paper-authors"> 16:00-17:30 (Hall A, Room B) </div>
+<div class="emnlp-paper-title"> Due to rapidly growing cyber-attacks and security vulnerabilities, many reports on cyber-threat intelligence  are being published daily. </div>
+<div class="emnlp-paper-authors"> Youngja Park and Taesung Lee </div>
 </div>
 </div>
     

@@ -314,6 +314,8 @@
       border: 1px solid var(--color-border-primary);
       padding-bottom: 15px;
 
+      transition: visibility 0.5s, max-height 3s;
+
       &.active {
         visibility: visible;
         max-height: 400rem;
@@ -323,22 +325,25 @@
 
       .emnlp-track {
         overflow: hidden;
+        width: 100%;
 
         .emnlp-track-btn {
             // width: 100%;
             margin: 15px 0px 0px 15px;
             border-radius: 12px;
+            width: calc(100% - 30px);
         }
 
         .emnlp-track-content {
           visibility: hidden;
           max-height: 0;
+          transition: visibility 1s, max-height 3s;
           // width: 100%;
 
           &.active {
             visibility: visible;
             max-height: 400rem;
-            transition: visibility 0.5s, max-height 10s;
+            transition: visibility 1s, max-height 10s;
 
             .emnlp-paper {
               margin: 15px; // 0px 0px 15px;
